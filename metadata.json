@@ -1,0 +1,6 @@
+{
+  "name": "إدارة الموارد البشرية",
+  "description": "تطبيق ويب مخصص لقسم الموارد البشرية (HR) لإدارة الموظفين والحضور والغيابات",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
