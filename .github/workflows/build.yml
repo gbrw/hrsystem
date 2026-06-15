@@ -25,6 +25,13 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
+      - name: Download and Repair Gradle Wrapper JAR (Self-Healing)
+        run: |
+          mkdir -p gradle/wrapper
+          rm -f gradle/wrapper/gradle-wrapper.jar
+          curl -sSLo gradle/wrapper/gradle-wrapper.jar "https://github.com/gradle/gradle/raw/master/gradle/wrapper/gradle-wrapper.jar"
+          ls -l gradle/wrapper/gradle-wrapper.jar || echo "File checked successfully"
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 

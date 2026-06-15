@@ -1,0 +1,12 @@
+# Ensure line endings are handled correctly for scripts
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+
+# Treat all jar files, keys, and image assets as binary
+*.jar binary
+*.png binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.keystore binary
+*.bin binary
